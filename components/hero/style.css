@@ -1,0 +1,16 @@
+@layer components {
+  .hero {
+    @apply py-8 sm:py-14 min-h-[270px] flex flex-col justify-center;
+    background: var(--bg-secondary);
+    &__title {
+      @apply mb-1 text-2xl sm:text-3xl lg:text-4xl font-bold;
+      color: var(--text-primary);
+    }
+    &__desc {
+      color: var(--text-secondary);
+    }
+    &__back {
+      @apply mb-3 flex gap-3 items-center;
+    }
+  }
+}
