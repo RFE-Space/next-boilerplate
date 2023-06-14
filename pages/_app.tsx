@@ -20,14 +20,5 @@ type AppPropsWithLayout = AppProps & {
 export default function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page: ReactNode) => page);
 
-  return <ThemeProvider attribute="class">
-    <NextNProgress
-      color="#6b7280"
-      startPosition={0.3}
-      stopDelayMs={200}
-      height={4}
-      showOnShallow={true}
-    />
-    {getLayout(<Component {...pageProps} />)}
-  </ThemeProvider>;
+  return getLayout(<Component {...pageProps} />);
 }
