@@ -1,0 +1,41 @@
+@layer components {
+  .button {
+    @apply duration-200;
+    &.button-sm {
+      @apply text-sm px-4 py-1;
+      &.button-rounded {
+        @apply rounded-2xl;
+      }
+    }
+    &.button-md {
+      @apply text-base px-5 py-2;
+      &.button-rounded {
+        @apply rounded-3xl;
+      }
+    }
+    &.button-lg {
+      @apply text-lg px-7 py-3;
+      &.button-rounded {
+        @apply rounded-[28px];
+      }
+    }
+    &.button-xl {
+      @apply text-xl px-9 py-4;
+      &.button-rounded {
+        @apply rounded-[32px];
+      }
+    }
+    &.button-primary {
+      @apply border-blue-700 border-[2px] text-white bg-blue-700;
+      &:hover {
+        @apply border-blue-800 bg-blue-800;
+      }
+    }
+    &.button-outline {
+      @apply border-black border-[2px] text-black bg-transparent;
+      &:hover {
+        @apply bg-black text-white;
+      }
+    }
+  }
+}
