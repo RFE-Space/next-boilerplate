@@ -2,5 +2,5 @@
 
 ### Feature
 
-[x] Tailwind
-[x] React hook form
+- [x] Tailwind
+- [x] React hook form
